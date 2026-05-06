@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Charan — Broadcast Graphics Designer & Live Operator</title>
+    <meta name="description"
+        content="Portfolio of Sai Charan — Ross XPression Designer & Live Graphics Operator at Tesseract Esports. Specializing in real-time broadcast graphics for esports tournaments.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>SC<span class="logo-bracket">/&gt;</span>
+        </a>
+        <div class="nav-links">
+            <a href="#about" class="nav-link" data-text="About">About</a>
+            <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
+            <a href="#projects" class="nav-link" data-text="Work">Work</a>
+            <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+            <a href="#showreel" class="nav-link" data-text="Showreel">Showreel</a>
+            <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Work</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#showreel" class="mobile-link">Showreel</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-gradient-orb hero-orb-1"></div>
+        <div class="hero-gradient-orb hero-orb-2"></div>
+        <div class="hero-gradient-orb hero-orb-3"></div>
+
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="tag-dot"></span>
+                <span>Open to opportunities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-line">
+                    <span class="hero-word" data-delay="0">Hi,</span>
+                    <span class="hero-word" data-delay="1">I'm</span>
+                </span>
+                <span class="hero-line hero-name-line">
+                    <span class="hero-word gradient-text" data-delay="2">Sai Charan</span>
+                </span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typed-text" id="typed-text"></span><span class="typed-cursor">|</span>
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/saicharan0507/" target="_blank" class="social-link"
+                    aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal-up">
+                    <p class="about-intro">
+                        I'm a <span class="highlight">Ross XPression Designer</span> &
+                        <span class="highlight">Live Graphics Operator</span> specializing in
+                        real-time broadcast graphics for esports and live events.
+                    </p>
+                    <p>
+                        Based in Hyderabad, India, I work at Tesseract Esports where I've spent nearly
+                        5 years delivering seamless on-air graphics for high-pressure championship events
+                        and grand finals — both LAN and online tournaments.
+                    </p>
+                    <p>
+                        From designing and scripting complex XPression scenes to operating live rundowns
+                        under pressure, I combine technical precision with creative design to bring
+                        broadcast-quality visuals to life in real-time.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Connections</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="833">0</span><span class="stat-plus"></span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal-up" data-delay="200">
+                    <div class="about-card">
+                        <div class="card-glow"></div>
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <span class="code-dot red"></span>
+                                <span class="code-dot yellow"></span>
+                                <span class="code-dot green"></span>
+                                <span class="code-filename">sai_charan.js</span>
+                            </div>
+                            <pre><code><span class="code-keyword">const</span> <span class="code-var">saiCharan</span> = {
+  <span class="code-prop">role</span>: <span class="code-string">"XPression Designer"</span>,
+  <span class="code-prop">company</span>: <span class="code-string">"Tesseract Esports"</span>,
+  <span class="code-prop">location</span>: <span class="code-string">"Hyderabad, India"</span>,
+  <span class="code-prop">tools</span>: [
+    <span class="code-string">"Ross XPression"</span>,
+    <span class="code-string">"Ross Dashboard"</span>,
+    <span class="code-string">"After Effects"</span>,
+    <span class="code-string">"Photoshop"</span>
+  ],
+  <span class="code-prop">motto</span>: <span class="code-string">"Design. Operate. Go Live."</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- Role 1: XPression Broadcast Graphics Designer -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-glow"></div>
+                            <span class="timeline-date">Jul 2024 — Present</span>
+                            <h3 class="timeline-role">XPression Broadcast Graphics Designer</h3>
+                            <p class="timeline-company">Tesseract Esports · Full-time</p>
+                            <p class="timeline-desc">
+                                Specializing in real-time broadcast graphics design and live operations
+                                using Ross XPression. Working across multiple high-pressure championship
+                                events and grand finals, delivering seamless on-air graphics for LAN and
+                                online tournaments.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">Ross XPression</span>
+                                <span class="tag">Ross Dashboard</span>
+                                <span class="tag">Logic & Scripting</span>
+                                <span class="tag">Live Operations</span>
+                                <span class="tag">Broadcast Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role 2: XPression Operator -->
+                <div class="timeline-item reveal-up" data-delay="150">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-glow"></div>
+                            <span class="timeline-date">May 2023 — Jun 2024</span>
+                            <h3 class="timeline-role">XPression Operator</h3>
+                            <p class="timeline-company">Tesseract Esports · Full-time</p>
+                            <p class="timeline-desc">
+                                Handled on-air graphics operations for major esports tournaments using Ross XPression.
+                                Loaded and operated rundowns for match days, player stats, highlights, and standings.
+                                Executed graphics cues live during broadcasts with precision and timing. Managed
+                                last-minute graphic requests, real-time score updates, and replacements without
+                                interrupting broadcast flow.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">Ross XPression</span>
+                                <span class="tag">Live Broadcast</span>
+                                <span class="tag">Rundown Ops</span>
+                                <span class="tag">Score Updates</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role 3: Gameplay Moderator -->
+                <div class="timeline-item reveal-up" data-delay="300">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-glow"></div>
+                            <span class="timeline-date">Apr 2021 — May 2023</span>
+                            <h3 class="timeline-role">Gameplay Moderator</h3>
+                            <p class="timeline-company">Tesseract Esports · Full-time</p>
+                            <p class="timeline-desc">
+                                Moderated competitive esports tournaments ensuring smooth match flow and
+                                rule enforcement. Coordinated with tournament officials, observers, and
+                                players. Verified match schedules, lobby setups, team lineups, and rehost
+                                approvals. Maintained fair gameplay environment and conflict-free
+                                communication between teams.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">Tournament Ops</span>
+                                <span class="tag">Moderation</span>
+                                <span class="tag">Esports</span>
+                                <span class="tag">Team Coordination</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role 4: Frontend Developer -->
+                <div class="timeline-item reveal-up" data-delay="450">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-card">
+                            <div class="card-glow"></div>
+                            <span class="timeline-date">Oct 2020 — Dec 2020</span>
+                            <h3 class="timeline-role">Frontend Developer</h3>
+                            <p class="timeline-company">Bharat Dekho · Internship · Hybrid</p>
+                            <p class="timeline-desc">
+                                Frontend development internship building web interfaces and gaining
+                                hands-on experience with modern web technologies and UI development
+                                practices.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Frontend</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section (after experience) -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-card reveal-up">
+                <div class="edu-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                        <path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5" />
+                    </svg>
+                </div>
+                <div class="edu-content">
+                    <h3 class="edu-school">HITAM</h3>
+                    <p class="edu-fullname">Hyderabad Institute of Technology and Management</p>
+                    <p class="edu-degree">Bachelor of Technology — BTech, Computer Science</p>
+                    <span class="edu-date">2016 — 2020</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Work Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Featured Work</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal-up" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-gradient project-gradient-1"></div>
+                        <div class="project-number">01</div>
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Live Esports Broadcast Graphics</h3>
+                        <p class="project-desc">
+                            Real-time on-air graphics designed and operated for championship events
+                            and grand finals. Player stats, match scores, standings, and dynamic
+                            overlays delivered seamlessly during live broadcasts.
+                        </p>
+                        <div class="project-tech">
+                            <span>Ross XPression</span>
+                            <span>Ross Dashboard</span>
+                            <span>Live Ops</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal-up" data-delay="100" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-gradient project-gradient-2"></div>
+                        <div class="project-number">02</div>
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                <polyline points="2 17 12 22 22 17" />
+                                <polyline points="2 12 12 17 22 12" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">XPression Scene Design & Scripting</h3>
+                        <p class="project-desc">
+                            Custom broadcast scene design with Ross XPression including logic-driven
+                            templates, data-bound graphics, and scripted animations for dynamic
+                            tournament coverage.
+                        </p>
+                        <div class="project-tech">
+                            <span>XPression</span>
+                            <span>Logic</span>
+                            <span>Scripting</span>
+                            <span>Data Binding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal-up" data-delay="200" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-gradient project-gradient-3"></div>
+                        <div class="project-number">03</div>
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="10 8 16 12 10 16 10 8" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Tournament Production Operations</h3>
+                        <p class="project-desc">
+                            End-to-end tournament graphics operations — from rundown loading and
+                            match-day coordination to live graphics cues, real-time score updates,
+                            and seamless on-air execution.
+                        </p>
+                        <div class="project-tech">
+                            <span>Rundowns</span>
+                            <span>Live Cues</span>
+                            <span>Production</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal-up" data-delay="300" data-tilt>
+                    <div class="project-card-inner">
+                        <div class="project-gradient project-gradient-4"></div>
+                        <div class="project-number">04</div>
+                        <div class="project-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Motion Graphics & Visual Design</h3>
+                        <p class="project-desc">
+                            Broadcast-quality motion graphics, lower thirds, transitions, stingers,
+                            and branding packages designed for esports tournaments and live
+                            streaming productions.
+                        </p>
+                        <div class="project-tech">
+                            <span>After Effects</span>
+                            <span>Photoshop</span>
+                            <span>Motion Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category reveal-up">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                        Broadcast Graphics
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Ross XPression</span>
+                        <span class="skill-pill">Ross Dashboard</span>
+                        <span class="skill-pill">XPression Logic</span>
+                        <span class="skill-pill">XPression Scripting</span>
+                        <span class="skill-pill">Live Graphics Ops</span>
+                        <span class="skill-pill">Rundown Management</span>
+                        <span class="skill-pill">Real-time Data Feeds</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal-up" data-delay="100">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polygon points="10 8 16 12 10 16 10 8" />
+                        </svg>
+                        Motion & Design
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">After Effects</span>
+                        <span class="skill-pill">Photoshop</span>
+                        <span class="skill-pill">Motion Graphics</span>
+                        <span class="skill-pill">Lower Thirds</span>
+                        <span class="skill-pill">Broadcast Branding</span>
+                        <span class="skill-pill">Transitions & Stingers</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal-up" data-delay="200">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                        Development
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">HTML/CSS</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">Frontend Development</span>
+                        <span class="skill-pill">Web Design</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal-up" data-delay="300">
+                    <h3 class="skill-category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        Esports & Production
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Tournament Operations</span>
+                        <span class="skill-pill">Live Production</span>
+                        <span class="skill-pill">Gameplay Moderation</span>
+                        <span class="skill-pill">Team Coordination</span>
+                        <span class="skill-pill">Broadcast Workflow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section class="section showreel" id="showreel">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Showreel</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="section-subtitle reveal-up">Tournaments I've worked on as an XPression Designer & Operator. Click
+                to watch!</p>
+
+            <div class="video-grid">
+                <!-- Featured: BMIC 2025 -->
+                <div class="video-card video-card-featured reveal-up">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder" data-video-id="50Q19kjnGYw">
+                            <img class="video-thumbnail" src="https://img.youtube.com/vi/50Q19kjnGYw/maxresdefault.jpg"
+                                alt="BMIC 2025 Day 3" loading="lazy">
+                            <div class="video-play-btn">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <div class="video-overlay">
+                                <span class="video-label">▶ BMIC 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video-title">BMIC 2025 — Day 3 — #FORTHECROWN</h3>
+                    <p class="video-desc">India, South Korea & Japan clash at the Battlegrounds Mobile India
+                        International Cup 2025</p>
+                </div>
+
+                <!-- BMSD 2025 Grand Finals -->
+                <div class="video-card reveal-up" data-delay="100">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder" data-video-id="Z-5m3sac5DU">
+                            <img class="video-thumbnail" src="https://img.youtube.com/vi/Z-5m3sac5DU/maxresdefault.jpg"
+                                alt="BMSD 2025 Grand Finals" loading="lazy">
+                            <div class="video-play-btn">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <div class="video-overlay">
+                                <span class="video-label">▶ Play</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video-title">BMSD 2025 — Grand Finals Day 1</h3>
+                    <p class="video-desc">Top 16 teams battling in high-stakes BGMI Grand Finals</p>
+                </div>
+
+                <!-- BMPS 2025 Grand Finals -->
+                <div class="video-card reveal-up" data-delay="200">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder" data-video-id="E14HLlBsYb4">
+                            <img class="video-thumbnail" src="https://img.youtube.com/vi/E14HLlBsYb4/maxresdefault.jpg"
+                                alt="BMPS 2025 Grand Finals" loading="lazy">
+                            <div class="video-play-btn">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <div class="video-overlay">
+                                <span class="video-label">▶ Play</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video-title">realme BMPS 2025 — Grand Finals Day 3</h3>
+                    <p class="video-desc">The final day — one team claims the BMPS 2025 Championship title</p>
+                </div>
+
+                <!-- BGIS 2025 Grand Finals -->
+                <div class="video-card reveal-up" data-delay="100">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder" data-video-id="6BrDOjFQU-M">
+                            <img class="video-thumbnail" src="https://img.youtube.com/vi/6BrDOjFQU-M/maxresdefault.jpg"
+                                alt="BGIS 2025 Grand Finals" loading="lazy">
+                            <div class="video-play-btn">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <div class="video-overlay">
+                                <span class="video-label">▶ Play</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video-title">realme BGIS 2025 — Grand Finals Day 1</h3>
+                    <p class="video-desc">Epic climax in Kolkata — India's top teams clash for the BGIS title</p>
+                </div>
+
+                <!-- BGIS 2024 Grand Finals -->
+                <div class="video-card reveal-up" data-delay="200">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder" data-video-id="vaFUmeNxl7A">
+                            <img class="video-thumbnail" src="https://img.youtube.com/vi/vaFUmeNxl7A/maxresdefault.jpg"
+                                alt="BGIS 2024 Grand Finals" loading="lazy">
+                            <div class="video-play-btn">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <div class="video-overlay">
+                                <span class="video-label">▶ Play</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video-title">BGIS 2024 — Grand Finals Day 3</h3>
+                    <p class="video-desc">Top 16 teams converge for a shot at ultimate glory</p>
+                </div>
+
+                <!-- BMPS 2023 Grand Finals -->
+                <div class="video-card reveal-up" data-delay="100">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder" data-video-id="jFDrv6G5WiU">
+                            <img class="video-thumbnail" src="https://img.youtube.com/vi/jFDrv6G5WiU/maxresdefault.jpg"
+                                alt="BMPS 2023 Grand Finals" loading="lazy">
+                            <div class="video-play-btn">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <div class="video-overlay">
+                                <span class="video-label">▶ Play</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video-title">BMPS 2023 — Grand Finals Day 1</h3>
+                    <p class="video-desc">Battlegrounds Mobile Pro Series 2023 championship action</p>
+                </div>
+
+                <!-- BGIS 2023 Grand Finals -->
+                <div class="video-card reveal-up" data-delay="200">
+                    <div class="video-wrapper">
+                        <div class="video-placeholder" data-video-id="SEY6hEOJObc">
+                            <img class="video-thumbnail" src="https://img.youtube.com/vi/SEY6hEOJObc/maxresdefault.jpg"
+                                alt="BGIS 2023 Grand Finals" loading="lazy">
+                            <div class="video-play-btn">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <div class="video-overlay">
+                                <span class="video-label">▶ Play</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="video-title">BGIS 2023 — Grand Finals Day 3</h3>
+                    <p class="video-desc">16 top teams compete for ₹2 Crore prize pool in the BGIS grand showdown</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-up">
+                    <h3 class="contact-heading">Got a project in mind?</h3>
+                    <p class="contact-text">
+                        I'm always excited to work on broadcast graphics projects — whether it's designing
+                        XPression scenes for live tournaments, operating graphics for championship events,
+                        or creating motion graphics packages. Let's make your next broadcast look incredible.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:scharan792@gmail.com" class="contact-link-item">
+                            <div class="contact-link-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">scharan792@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saicharan0507/" target="_blank" class="contact-link-item">
+                            <div class="contact-link-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-link-label">LinkedIn</span>
+                                <span class="contact-link-value">linkedin.com/in/saicharan0507</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-link-item">
+                            <div class="contact-link-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-link-label">Location</span>
+                                <span class="contact-link-value">Hyderabad, Telangana, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-up" data-delay="200">
+                    <!-- Replace YOUR_FORM_ID with your actual Formspree ID to enable submissions -->
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID"
+                        method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>SC<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Designed & Built by Sai Charan</p>
+                <p class="footer-copyright">&copy; 2025 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
